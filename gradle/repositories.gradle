@@ -1,0 +1,61 @@
+repositories {
+    mavenLocal()
+    maven {
+        url sberstackCentralRepo
+        credentials {
+//            username = System.getenv('MAVEN_USER')
+//            password = System.getenv('MAVEN_PASSWORD')
+        }
+    }
+
+    maven {
+        url sberstackCentralRepoTwo
+        credentials {
+//            username = 'token'
+//            password = System.getenv('OSC_TOKEN')
+        }
+    }
+
+    maven {
+        url sberstackGradleLocalRepo
+        credentials {
+//            username = System.getenv('MAVEN_USER')
+//            password = System.getenv('MAVEN_PASSWORD')
+        }
+    }
+    maven {
+        url sberstackEfstoolsReleaseRepo
+        credentials {
+//            username = System.getenv('MAVEN_USER')
+//            password = System.getenv('MAVEN_PASSWORD')
+        }
+    }
+    maven {
+        url sberstackEfstoolsSnapshotRepo
+        credentials {
+//            username = System.getenv('MAVEN_USER')
+//            password = System.getenv('MAVEN_PASSWORD')
+        }
+    }
+    maven {
+        url sberstackIntellijThirdPartyDependenciesProxyRepo
+        credentials {
+//            username = System.getenv('MAVEN_USER')
+//            password = System.getenv('MAVEN_PASSWORD')
+        }
+    }
+    maven {
+        url sberstackJetbrainsIntellijRepositoryProxyRepo
+        credentials {
+//            username = 'token'
+//            password = System.getenv('OSC_TOKEN')
+        }
+    }
+    maven {
+        url dopefishRepo
+        credentials {
+//            username = System.getenv('MAVEN_USER')
+//            password = System.getenv('MAVEN_PASSWORD')
+        }
+    }
+}

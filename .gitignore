@@ -1,10 +1,5 @@
-/build/
-/utils/build/
-/stockmetrics/build/
-/openapi/build/
-/tests/
-/metrics.xml
-/build.properties
-/MetricsReloaded.iws
-/.shelf/
+# Ignore Gradle project-specific cache directory
+.gradle
 
+# Ignore Gradle build output directory
+build

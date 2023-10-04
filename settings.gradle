@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        maven {
+            url sberstackGradlePluginRepo
+            credentials {
+//                username = System.getenv('MAVEN_USER')
+//                password = System.getenv('MAVEN_PASSWORD')
+            }
+        }
+        maven {
+            url sberstackGradleDuoPluginRepo
+            credentials {
+//                username = 'token'
+//                password = System.getenv('OSC_TOKEN')
+            }
+        }
+    }
+}
+
+rootProject.name = 'MetricsReloaded'
+include('plugin')
+include('utils')
+include('openapi')
+include('stockmetrics')
+include 'utils'
+

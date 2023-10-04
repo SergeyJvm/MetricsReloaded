@@ -1,0 +1,23 @@
+buildscript {
+    dependencies {
+        classpath "org.jetbrains.intellij.plugins:gradle-intellij-plugin:1.5.2"
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+//apply plugin: "org.jetbrains.intellij"
+
+apply from: "${rootDir}/gradle/dependencies.gradle"
+dependencies {
+    implementation 'trove:trove:2.1.1'
+}
+
+repositories {
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
+    }
+}

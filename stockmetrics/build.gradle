@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation 'trove:trove:2.1.1'
+}
+
+repositories {
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
+    }
+}

@@ -1,0 +1,12 @@
+intellij {
+    version = intellijIdeaVersion
+    intellijRepository = sberstackJetbrainsIntellijRepositoryProxyRepo
+//    localPath = 'C:\\Users\\19567914\\workspace\\dependency'
+    type = 'IU'
+    updateSinceUntilBuild = true
+    sameSinceUntilBuild = false
+    pluginName =  project.name
+    instrumentCode = true
+    downloadSources = false
+    plugins = ['java', 'maven', 'properties','com.intellij.database', 'yaml', 'org.jetbrains.kotlin', 'JavaScriptLanguage', 'Groovy']
+}
