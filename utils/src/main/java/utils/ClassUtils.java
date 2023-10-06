@@ -17,10 +17,12 @@
 package utils;
 
 import com.intellij.openapi.fileTypes.FileType;
+import com.intellij.openapi.module.Module;
 import com.intellij.openapi.roots.ProjectFileIndex;
 import com.intellij.openapi.roots.ProjectRootManager;
 import com.intellij.openapi.util.Key;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.psi.*;
 import com.intellij.psi.search.searches.ClassInheritorsSearch;
 import com.intellij.psi.search.searches.DirectClassInheritorsSearch;
 import com.intellij.psi.util.PsiTreeUtil;
@@ -84,8 +86,7 @@ public final class ClassUtils {
                 aClass.getParent() instanceof PsiDeclarationStatement;
     }
 
-    @Nullable
-    public static Module calculateModule(@Nullable PsiElement element) {
+    public static @Nullable Module calculateModule(@Nullable PsiElement element) {
         if (element == null) {
             return null;
         }

@@ -5,14 +5,7 @@ plugins {
 sourceCompatibility = 1.11
 targetCompatibility = 1.11
 dependencies {
-    implementation 'trove:trove:2.1.1'
-}
 
-repositories {
-    maven {
-        url 'https://repo.clojars.org'
-        name 'Clojars'
-    }
 }
 
 compileJava.options.encoding = 'UTF-8'

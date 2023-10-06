@@ -17,6 +17,7 @@ package utils;
 
 import com.intellij.codeInsight.AnnotationUtil;
 import com.intellij.openapi.project.Project;
+import com.intellij.psi.*;
 import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.util.PsiTreeUtil;
 import org.jetbrains.annotations.NonNls;

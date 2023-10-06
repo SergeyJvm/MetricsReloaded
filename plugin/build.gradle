@@ -6,18 +6,16 @@ buildscript {
 
 plugins {
     id 'java'
+    id 'groovy'
+    id "idea"
 }
 
-//apply plugin: "org.jetbrains.intellij"
+apply plugin: "org.jetbrains.intellij"
 
+apply from: "${rootDir}/gradle/repositories.gradle"
 apply from: "${rootDir}/gradle/dependencies.gradle"
-dependencies {
-    implementation 'trove:trove:2.1.1'
-}
+apply from: "${rootDir}/gradle/intellij.gradle"
 
-repositories {
-    maven {
-        url 'https://repo.clojars.org'
-        name 'Clojars'
-    }
+dependencies {
+    implementation project(":openapi")
 }
