@@ -18,8 +18,8 @@ package com.sixrr.stockmetrics.classCalculators;
 
 import com.intellij.psi.PsiClass;
 import com.sixrr.metrics.Metric;
-import com.sixrr.metrics.utils.ClassUtils;
 import com.sixrr.stockmetrics.execution.BaseMetricsCalculator;
+import com.sixrr.metrics.utils.ClassUtils;
 
 public abstract class ClassCalculator extends BaseMetricsCalculator {
 

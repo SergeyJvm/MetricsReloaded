@@ -6,7 +6,7 @@ intellij {
     updateSinceUntilBuild = true
     sameSinceUntilBuild = false
     pluginName =  project.name
-    instrumentCode = true
+    instrumentCode = false
     downloadSources = false
     plugins = ['java', 'maven', 'properties','com.intellij.database', 'yaml', 'org.jetbrains.kotlin', 'JavaScriptLanguage', 'Groovy']
 }

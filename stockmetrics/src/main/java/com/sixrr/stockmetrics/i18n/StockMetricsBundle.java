@@ -15,7 +15,6 @@
  */
 package com.sixrr.stockmetrics.i18n;
 
-import com.intellij.AbstractBundle;
 import com.intellij.CommonBundle;
 import com.intellij.reference.SoftReference;
 import org.jetbrains.annotations.PropertyKey;
@@ -38,7 +37,7 @@ public final class StockMetricsBundle {
     private static ResourceBundle getBundle() {
         ResourceBundle bundle = SoftReference.dereference(INSTANCE);
         if (bundle == null) {
-            bundle = ResourceBundle.getBundle(BUNDLE);
+            bundle = ResourceBundle.getBundle("StockMetricsBundle");
             INSTANCE = new SoftReference<>(bundle);
         }
         return bundle;

@@ -1,0 +1,48 @@
+buildscript {
+    dependencies {
+        classpath "org.jetbrains.intellij.plugins:gradle-intellij-plugin:1.5.0"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'groovy'
+    id "idea"
+//    id 'org.jetbrains.intellij' version '1.5.2'
+}
+apply plugin: "org.jetbrains.intellij"
+
+dependencies {
+implementation 'org.bndly.common.data:org.bndly.common.data.data:1.0.3'
+}
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+//buildSearchableOptions.enabled = false
+//project.group projectGroup
+//def isSnapshot = snapshotFlag.toBoolean()
+//project.version currentProjectVersion
+//if (isSnapshot) {
+//    project.version += '-SNAPSHOT'
+//}
+
+
+//patchPluginXml {
+//    changeNotes = """
+//      Add change notes here.<br>
+//      <em>most HTML tags may be used</em>"""
+//
+//    sinceBuild = '141.*'
+//}
+
+apply from: "${rootDir}/gradle/repositories.gradle"
+apply from: "${rootDir}/gradle/dependencies.gradle"
+apply from: "${rootDir}/gradle/intellij.gradle"

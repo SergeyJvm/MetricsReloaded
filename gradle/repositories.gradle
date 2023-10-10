@@ -1,5 +1,8 @@
 repositories {
     mavenLocal()
+    flatDir {
+        dirs 'lib'
+    }
     maven {
         url sberstackCentralRepo
         credentials {

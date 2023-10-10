@@ -18,4 +18,10 @@ apply from: "${rootDir}/gradle/intellij.gradle"
 
 dependencies {
     implementation project(":openapi")
+    implementation project(":stockmetrics")
+    implementation project(":utils")
+
+    implementation 'jfreechart:jfreechart:0.9.16'
+    implementation 'jcommon:jcommon:0.9.1'
+    implementation 'args4j:args4j:2.32'
 }

@@ -13,7 +13,3 @@ apply plugin: "org.jetbrains.intellij"
 apply from: "${rootDir}/gradle/repositories.gradle"
 apply from: "${rootDir}/gradle/dependencies.gradle"
 apply from: "${rootDir}/gradle/intellij.gradle"
-
-dependencies {
-
-}

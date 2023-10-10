@@ -14,6 +14,13 @@ pluginManagement {
                 password = System.getenv('OSC_TOKEN')
             }
         }
+        maven {
+            url sberstackJetbrainsIntellijRepositoryProxyRepo2
+            credentials {
+                username = 'token'
+                password = System.getenv('OSC_TOKEN')
+            }
+        }
     }
 }
 
@@ -22,4 +29,3 @@ include 'plugin'
 include 'openapi'
 include 'stockmetrics'
 include 'utils'
-

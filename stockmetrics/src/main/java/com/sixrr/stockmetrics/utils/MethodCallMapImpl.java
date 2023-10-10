@@ -20,7 +20,7 @@ import com.intellij.psi.*;
 import com.intellij.psi.search.searches.ReferencesSearch;
 import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.util.Query;
-import utils.TestUtils;
+import com.sixrr.metrics.utils.TestUtils;
 
 import java.util.HashMap;
 import java.util.HashSet;

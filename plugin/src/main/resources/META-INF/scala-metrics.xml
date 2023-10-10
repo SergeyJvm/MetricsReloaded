@@ -16,6 +16,6 @@
 
 <idea-plugin>
   <extensions defaultExtensionNs="MetricsReloaded">
-    <metricProvider implementation="com.sixrr.stockmetrics.ScalaMetricProvider"/>
+<!--    <metricProvider implementation="com.sixrr.stockmetrics.ScalaMetricProvider"/>-->
   </extensions>
 </idea-plugin>

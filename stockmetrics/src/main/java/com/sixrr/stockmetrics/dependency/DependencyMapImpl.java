@@ -17,10 +17,9 @@
 package com.sixrr.stockmetrics.dependency;
 
 import com.intellij.psi.*;
+import org.jetbrains.annotations.Nullable;
 import com.sixrr.metrics.utils.BucketedCount;
 import com.sixrr.metrics.utils.ClassUtils;
-import com.sixrr.metrics.utils.Stack;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
 

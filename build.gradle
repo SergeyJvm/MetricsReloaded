@@ -4,9 +4,6 @@ plugins {
 }
 sourceCompatibility = 1.11
 targetCompatibility = 1.11
-dependencies {
-
-}
 
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
